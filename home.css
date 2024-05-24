@@ -1,0 +1,703 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* Ajuste para dispositivos móviles */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/bg-pattern.png);
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container-header img {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background-color: #dfdfdf;
+    border: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    font-size: 12px;
+
+
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    pointer-events: none;
+
+}
+
+.dropdown-menu li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.dropdown-toggle:hover+.dropdown-menu {
+    display: block;
+}
+
+
+h1 {
+    font-size: 10px;
+    order: 1;
+
+}
+
+h2 {
+    font-size: 35px;
+    color: #1a78c5;
+}
+
+a {
+    color: #1a78c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100px;
+    order: 0;
+    margin-left: 25px;
+
+}
+
+/*menu*/
+
+.Hamburguesa {
+    position: absolute;
+    /* Asegura que el contenedor sea relativo */
+    z-index: 1;
+    /* Establece un z-index menor que el del menú */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: -800px;
+    height: 80px;
+}
+
+.log img {
+    height: 60px;
+    max-width: 500px;
+    margin-left: 70px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    /* Añade posición absoluta para superponer el menú */
+    top: 10px;
+    /* Ajusta según sea necesario */
+    right: 20px;
+    /* Ajusta según sea necesario */
+    z-index: 2;
+    /* Asegura que el menú esté por encima del contenido */
+    background-color: #0078AE;
+    width: 85PX;
+}
+
+.linea {
+    width: 2px;
+    height: 80px;
+    background-color: rgb(231, 229, 229);
+    margin-right: 400px;
+}
+
+
+.menu-toggle,
+.h7 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #0078AE;
+    margin: 4px 0;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-right: 50px;
+    font-size: 21px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #0078AE;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .Hamburguesa {
+        margin-top: -800px;
+        position: absolute;
+        width: 92%;
+    }
+
+
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        position: absolute;
+        /* Añade posición absoluta para superponer el menú */
+        top: 60px;
+        /* Ajusta según sea necesario */
+        right: 0;
+        /* Ajusta según sea necesario */
+        z-index: 2;
+        /* Asegura que el menú esté por encima del contenido */
+        margin-top: 40px;
+        left: 10px;
+
+    }
+
+    .links.active {
+        display: flex;
+    }
+}
+
+/*section 1*/
+
+.hoja {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    margin-top: -150px;
+}
+
+/* estilos para cada hoja*/
+
+.hoja-1,
+.hoja-2,
+.hoja-3 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hoja-2,
+.hoja-3,
+.hoja-3 {
+    height: 530px;
+}
+
+.hoja img {
+    max-width: 90%;
+    height: auto;
+
+}
+
+h5 {
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+/*vista para celulares*/
+
+@media only screen and (max-width:768px) {
+    .hoja {
+        background-color: transparent;
+        flex-direction: column;
+        margin-top: 1180px;
+        position: absolute;
+    }
+
+    h5 {
+        font-size: 25px;
+        order: 1;
+
+    }
+
+    .hoja-1,
+    .hoja-2,
+    .hoja-3 {
+        width: 100%;
+        margin-bottom: 20px;
+        /* Espacio entre las hojas cuando están apiladas */
+        margin-right: 0;
+        /* Eliminar el margen derecho */
+        background-size: 0%;
+        /* Eliminar background-size */
+    }
+
+    .hoja img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/*section 2 */
+
+.celular-1 {
+    max-width: 1160px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 560px;
+    position: absolute;
+    height: 160px;
+}
+
+
+.celular-1 img {
+    order: 1;
+    max-width: 400px;
+    height: 140px;
+}
+
+.celular-1 h2,
+.celular-1 p {
+    flex: 1;
+}
+
+h2 {
+    font-size: 25px;
+    color: #000000;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .celular-1 {
+        margin-top: 3530px;
+        width: 535px;
+        flex-direction: column;
+        position: absolute;
+        height: 450px;
+
+    }
+
+    h2 {
+        font-size: 25px;
+        order: 1;
+        margin-right: 200px;
+    }
+
+    p {
+        order: 3;
+        margin-right: 20px;
+        margin-left: 25px;
+    }
+
+    .celular-1 img {
+        max-width: 90%;
+        height: 250px;
+        order: 2;
+        margin-right: 20px;
+    }
+}
+
+/*section 3*/
+
+.cuadro {
+    max-width: 1200px;
+    /* Ancho máximo para las hojas */
+    width: 100%;
+    padding: 0 20px;
+    /* Añadir espacio en los bordes */
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    /* Espacio entre las hojas */
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    /* Esto no tiene ningún efecto, se debe cambiar a 'transparent' */
+    margin: auto;
+    /* Centrar horizontalmente */
+    margin-top: 1190px;
+    position: absolute;
+
+}
+
+.cuadro img {
+    max-width: 90%;
+    /* Ajustar la imagen al ancho de su contenedor */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+}
+
+.cuadro-1,
+.cuadro-2 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 450px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .cuadro {
+        background-color: transparent;
+        flex-direction: column;
+        margin-top: 5040px;
+        position: absolute;
+    }
+}
+
+/*section 4*/
+
+.tabla {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 2190px;
+    position: absolute;
+}
+
+.tabla img {
+    max-width: 90%;
+    height: auto;
+}
+
+.tabla-1,
+.tabla-2 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .tabla {
+        background-color: transparent;
+        /* Cambiar el fondo a transparente */
+        flex-direction: column;
+        margin-top: 7180px;
+        position: absolute;
+    }
+}
+
+
+/*section5*/
+
+.ventana {
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 3270px;
+    position: absolute;
+}
+
+
+
+.ventana-1,
+.ventana-2 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 490px;
+}
+
+.ventana img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .ventana {
+        background-color: transparent;
+        flex-direction: column;
+        max-width: 1500px;
+        position: absolute;
+        margin-top: 9410px;
+
+    }
+}
+
+/*section 6*/
+
+.ventanaa {
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 4300px;
+    position: absolute;
+
+
+}
+
+
+
+.ventanaa-1,
+.ventanaa-2 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 480px;
+
+}
+
+.ventanaa img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .ventanaa {
+        background-color: transparent;
+        flex-direction: column;
+        max-width: 1500px;
+        position: absolute;
+        margin-top: 11600px;
+
+    }
+}
+
+
+/*section 7*/
+
+.panal {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 5350px;
+    position: absolute;
+
+}
+
+.panal img {
+    max-width: 90%;
+    height: auto;
+}
+
+.panal-1 {
+    height: 495px;
+}
+
+.panal-1,
+.panal-2 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .panal {
+        background-color: transparent;
+        /* Cambiar el fondo a transparente */
+        flex-direction: column;
+        margin-top: 13798px;
+        position: absolute;
+    }
+}
+
+/*footer*/
+
+
+.footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 6195px;
+    position: absolute;
+    background-color: rgb(170, 170, 170);
+    height: 120px;
+    display: flex;
+
+
+}
+
+.footer img {
+    max-width: 300px;
+}
+
+
+.footer .redes-sociales {
+    display: flex;
+    margin: 950px;
+}
+
+.footer .redes-sociales img:hover {
+
+    background-color: #ffffff;
+}
+
+.footer .redes-sociales img {
+    width: 58px;
+    background-color: #9b9a9a;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(170, 170, 170);
+        margin-top: 15120px;
+        position: absolute;
+        max-width: 100%;
+    }
+
+    .footer .redes-sociales {
+        display: flex;
+        margin: 10px;
+    }
+
+    .footer img {
+        max-width: 200px;
+    }
+
+    .footer .redes-sociales img {
+        width: 28px;
+        background-color: #9b9a9a;
+
+    }
+
+}
+
+
+.return {
+    margin-top: 5950px;
+    margin-right: 1000px;
+    font-size: 25px;
+    position: absolute;
+    background-color: transparent;
+    font-weight: bolder;
+
+}
+
+.return a {
+    color: #16609c;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .return {
+        background-color: transparent;
+        margin-top: 14930px;
+        font-size: 25px;
+        margin-left: 785px;
+        font-weight: bolder;
+        position: absolute;
+        width: 320px;
+
+    }
+
+    .return a {
+        color: #16609c;
+    }
+}

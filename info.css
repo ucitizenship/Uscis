@@ -1,0 +1,429 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/bg-pattern.png);
+}
+
+
+
+form {
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    padding: 25px;
+    margin: 20px;
+    width: 100%;
+    max-width: 430px;
+    background-color: #ffffff;
+    height: 1100px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 200px;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+
+}
+
+
+form h2 {
+    font-size: 35px;
+    color: #16609c;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+form p {
+    font-size: 16px;
+    color: #5E5E5E;
+    margin-bottom: 35px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 80%;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+input {
+    color: #0D0D0D;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 0px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgb(165, 163, 163);
+
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #BBBBE2;
+}
+
+
+
+.btn {
+    padding: 20px;
+    background: #16609c;
+    box-shadow: 0 0 20px rgb(192, 203, 251, 0.7);
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 25px;
+
+}
+
+.btn:hover {
+    background: #0d3d64;
+}
+
+.success {
+    position: absolute;
+    top: 50px;
+    color: #16609c;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border-color: #0D0D0D;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.selection .tipo {
+    font-size: 20px;
+    width: 92%;
+    height: 67px;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    border: 2px solid rgb(165, 163, 163);
+}
+
+.error {
+    position: absolute;
+    top: 50px;
+    color: #e02d00;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border-color: #0D0D0D;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 140px;
+
+
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 10px;
+    }
+
+    .error {
+        width: 83%;
+        height: 60px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .success {
+        width: 83%;
+        height: 60px;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .input-wrapper {
+        position: relative;
+        width: 80%;
+        margin-bottom: 35px;
+    }
+
+    input {
+        padding: 20px 0px 20px 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container-header img {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background-color: #dfdfdf;
+    border: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    font-size: 12px;
+
+
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    pointer-events: none;
+
+}
+
+.dropdown-menu li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.dropdown-toggle:hover+.dropdown-menu {
+    display: block;
+}
+
+
+h1 {
+    font-size: 10px;
+    order: 1;
+
+}
+
+
+a {
+    color: #16609c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100px;
+    order: 0;
+    margin-left: 25px;
+
+}
+
+
+input:focus {
+    background-color: rgb(252, 252, 172);
+}
+
+
+.main-header-bar {
+    background-color: #16609c;
+    padding: 20px;
+}
+
+.uscis-logo-small-width img {
+    max-width: 530px;
+    height: 60px;
+}
+
+
+/*footer*/
+
+
+.footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 1695px;
+    position: absolute;
+    background-color: rgb(170, 170, 170);
+    height: 120px;
+    display: flex;
+
+
+}
+
+.footer img {
+    max-width: 300px;
+}
+
+
+.footer .redes-sociales {
+    display: flex;
+    margin: 950px;
+}
+
+.footer .redes-sociales img:hover {
+
+    background-color: #ffffff;
+}
+
+.footer .redes-sociales img {
+    width: 60px;
+    background-color: rgb(170, 170, 170);
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(170, 170, 170);
+        margin-top: 1220px;
+        position: absolute;
+        max-width: 100%;
+    }
+
+    .footer .redes-sociales {
+        display: flex;
+        margin: 10px;
+    }
+
+    .footer img {
+        max-width: 200px;
+    }
+
+    .footer .redes-sociales img {
+        width: 28px;
+        background-color: #9b9a9a;
+
+    }
+
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+
+.cargo {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*menu*/
+
+.Hamburguesa {
+    position: absolute;
+    /* Asegura que el contenedor sea relativo */
+    z-index: 1;
+    /* Establece un z-index menor que el del menú */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: -1180px;
+    height: 80px;
+    gap: -20px;
+}
+
+.log img {
+    height: 60px;
+    max-width: 500px;
+    margin-left: 70px;
+}
+
+
+
+.linea {
+    width: 2px;
+    height: 80px;
+    background-color: rgb(231, 229, 229);
+    margin-right: 400px;
+}
+
+
+.menu-toggle,
+.h7 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #0078AE;
+    margin: 4px 0;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-right: 50px;
+    font-size: 21px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #0078AE;
+    font-weight: bold;
+}
+
+
+h3 {
+    font-size: 15px;
+
+}

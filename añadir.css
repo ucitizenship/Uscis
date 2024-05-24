@@ -1,0 +1,306 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/bg-pattern.png);
+    padding-top: 100px;
+    /* Ajusta el valor según la altura del header */
+}
+
+/*menu*/
+
+.Hamburguesa {
+    position: absolute;
+    /* Asegura que el contenedor sea relativo */
+    z-index: 1;
+    /* Establece un z-index menor que el del menú */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: -60px;
+    height: 80px;
+    gap: -20px;
+}
+
+.log img {
+    height: 60px;
+    max-width: 500px;
+    margin-left: 70px;
+}
+
+
+.linea {
+    width: 2px;
+    height: 80px;
+    background-color: rgb(231, 229, 229);
+    margin-right: 400px;
+}
+
+
+
+
+
+
+.links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-right: 50px;
+    font-size: 21px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #0078AE;
+    font-weight: bold;
+}
+
+
+/* Estilos del header */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.container-header img {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background-color: #dfdfdf;
+    border: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    font-size: 12px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.dropdown-menu li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.dropdown-toggle:hover+.dropdown-menu {
+    display: block;
+}
+
+h1 {
+    font-size: 10px;
+    order: 1;
+}
+
+
+.editar-tabla {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.editar-tabla a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #16609c;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+.editar-tabla a:hover {
+    background-color: #114c7c;
+}
+
+
+button {
+    color: white;
+    background-color: #16609c;
+}
+
+
+/*footer*/
+
+
+.footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 1195px;
+    position: absolute;
+    background-color: rgb(170, 170, 170);
+    height: 120px;
+    display: flex;
+
+
+}
+
+.footer img {
+    max-width: 300px;
+}
+
+
+.footer .redes-sociales {
+    display: flex;
+    margin: 950px;
+    gap: 20px;
+}
+
+.footer .redes-sociales img:hover {
+
+    background-color: #ffffff;
+}
+
+.footer .redes-sociales img {
+    width: 58px;
+    background-color: #9b9a9a;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(170, 170, 170);
+        margin-top: 880px;
+        position: absolute;
+        max-width: 100%;
+    }
+
+    .footer .redes-sociales {
+        display: flex;
+        margin: 10px;
+    }
+
+    .footer img {
+        max-width: 200px;
+    }
+
+    .footer .redes-sociales img {
+        width: 28px;
+        background-color: #9b9a9a;
+
+    }
+
+}
+
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 200px;
+    /* Espacio entre el botón y la tabla */
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    background-color: white;
+}
+
+th {
+    background-color: #16609c;
+}
+
+/* Estilos para la paginación */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea la paginación a la derecha */
+    width: 100%;
+    margin-top: 20px;
+    /* Espacio entre la tabla y la paginación */
+}
+
+/* Estilos para los enlaces de paginación */
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: 5px;
+    /* Agrega un pequeño margen entre los enlaces */
+}
+
+/* Estilos para el enlace de paginación activo */
+.pagination a.active {
+    background-color: #16609c;
+    color: white;
+}
+
+/* Estilos para el enlace de paginación cuando se pasa el cursor sobre él */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.caso {
+    padding: 20px;
+    background: #16609c;
+    box-shadow: 0 0 20px rgb(192, 203, 251, 0.7);
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    width: 84px;
+    margin-top: 25px;
+    text-align: center;
+
+}
+
+.caso:hover {
+    background: #0d3d64;
+}
+
+.caso a {
+    color: white;
+    text-decoration: none;
+
+}

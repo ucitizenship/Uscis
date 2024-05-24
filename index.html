@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formulario">
+        
+
+        <h1>Sign in</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Email*</label>
+            </div>
+
+
+
+
+
+
+
+            <div class="username">
+                <input type="password" required>
+                <label>Password*</label>
+            </div>
+            <div class="recordar"> ¿forgot your password?</div>
+            <input type="submit" value="sign in ">
+
+            One account for all your USCIS needs.
+
+            <div class="registrarse">
+                <a href="#">Create an account</a>
+            </div>
+
+            
+        </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<form class="email" id="new_user" autocomplete="off" role="form" novalidate="novalidate" action="/" accept-charset="UTF-8" method="post">
+    <input type="hidden" name="authenticity_token" value="Cy/j903hf/lhu7dkirwk478kz+J/jBx5KPq19xe3RqD62pHRjIMh4ml0CyxbMKEpYui8C+T2Ah84ir530FZvGA==">
+    <div class="form-group email optional user_email">
+      <label class="control-label email optional" for="user_email">Email <abbr class="required">*</abbr></label>
+      <input class="form-control string email optional form-control" autofocus="autofocus" type="email" value="" name="user[email]" id="user_email">
+      <div></div>
+    </div>
+    <div class="username">
+       <input type="password" required>
+       <label>Password*</label>
+   </div>
+   
+    <div class="uscis-wireframe-links">
+      <a class="uscis-left-link" id="forgot_your_password" href="/users/password/new">Forgot your Password?</a>
+    
+    </div>
+    <div class="uscis-row-1">
+      <button name="button" type="submit" class="button uscis-button uscis-button-primary" id="sign_in" data-disable-with="Submit">Sign In</button>
+    </div>
+  </form>
+  <div class="uscis-row">
+    <br>
+    <p>One account for all of your USCIS needs.<br><strong><a href="/users/sign_up" id="create_an_account" data-turbolinks="false">Create an account.</a></strong></p>
+  </div>
+</div>

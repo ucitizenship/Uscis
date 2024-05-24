@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* Ajuste para dispositivos móviles */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/bg-pattern.png);
+}
+
+/*header*/
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container-header img {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background-color: #dfdfdf;
+    border: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    font-size: 12px;
+
+
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    pointer-events: none;
+
+}
+
+.dropdown-menu li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.dropdown-toggle:hover+.dropdown-menu {
+    display: block;
+}
+
+
+h1 {
+    font-size: 10px;
+    order: 1;
+
+}
+
+h2 {
+    font-size: 35px;
+    color: #1a78c5;
+}
+
+a {
+    color: #1a78c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.panel-central {
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    padding: 25px;
+    margin: 20px;
+    width: 100%;
+    max-width: 430px;
+    background-color: #ffffff;
+    height: 850px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 200px;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+}
+
+
+.input-wrapper input:focus {
+    background-color: rgb(252, 252, 172);
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #BBBBE2;
+}
+
+input {
+    color: #0D0D0D;
+    padding: 20px 15px 20px 60px;
+    width: 80%;
+    border-radius: 0px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgb(165, 163, 163);
+
+}
+
+.btn {
+    padding: 20px;
+    background: #16609c;
+    box-shadow: 0 0 20px rgb(192, 203, 251, 0.7);
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 25px;
+
+}
+
+.btn:hover {
+    background: #0d3d64;
+}
+
+
+
+
+/*footer*/
+
+
+.footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 1195px;
+    position: absolute;
+    background-color: rgb(170, 170, 170);
+    height: 120px;
+    display: flex;
+
+
+}
+
+.footer img {
+    max-width: 300px;
+}
+
+
+.footer .redes-sociales {
+    display: flex;
+    margin: 950px;
+    gap: 25px;
+}
+
+.footer .redes-sociales img:hover {
+
+    background-color: #ffffff;
+}
+
+.footer .redes-sociales img {
+    width: 58px;
+    background-color: #9b9a9a;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(170, 170, 170);
+        margin-top: 1220px;
+        position: absolute;
+        max-width: 100%;
+    }
+
+    .footer .redes-sociales {
+        display: flex;
+        margin: 10px;
+    }
+
+    .footer img {
+        max-width: 200px;
+    }
+
+    .footer .redes-sociales img {
+        width: 28px;
+        background-color: #9b9a9a;
+
+    }
+
+}
+
+/*menu*/
+
+.perro {
+    position: absolute;
+    /* Asegura que el contenedor sea relativo */
+    z-index: 1;
+    /* Establece un z-index menor que el del menú */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: -910px;
+    height: 80px;
+    gap: -20px;
+}
+
+.log img {
+    height: 60px;
+    max-width: 500px;
+    margin-left: 70px;
+}
+
+
+.linea {
+    width: 2px;
+    height: 80px;
+    background-color: rgb(231, 229, 229);
+    margin-right: 400px;
+}

@@ -1,0 +1,254 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/bg-pattern.png);
+}
+
+
+a {
+    text-decoration: none;
+    color: #16609c;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    width: 428px;
+}
+
+/*header*/
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container-header img {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background-color: #dfdfdf;
+    border: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    font-size: 12px;
+
+
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    pointer-events: none;
+
+}
+
+.dropdown-menu li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.dropdown-toggle:hover+.dropdown-menu {
+    display: block;
+}
+
+
+h1 {
+    font-size: 10px;
+    order: 1;
+
+}
+
+
+
+/*formulario*/
+
+
+form {
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    padding: 25px;
+    margin: 20px;
+    width: 100%;
+    max-width: 430px;
+    background-color: #ffffff;
+    height: 580px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    margin-bottom: 250px;
+
+
+}
+
+form h1 {
+    font-size: 35px;
+    color: #030303;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.main-header-bar {
+    background-color: #16609c;
+    padding: 20px;
+}
+
+.uscis-logo-small-width img {
+    max-width: 530px;
+    height: 60px;
+}
+
+
+.input-wrapper {
+    position: relative;
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+input {
+    color: #0D0D0D;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 0px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(167, 163, 163, 0.7);
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgb(165, 163, 163);
+    margin-top: 25px;
+}
+
+input:focus {
+    background-color: rgb(252, 252, 172);
+}
+
+
+input::placeholder {
+    font-size: 16px;
+    color: #BBBBE2;
+}
+
+
+
+.btn {
+    padding: 20px;
+    background-color: #16609c;
+    box-shadow: 0 0 20px rgb(192, 203, 251, 0.7);
+    font-size: 20px;
+    cursor: pointer;
+    width: 100px;
+    color: white;
+    margin-top: 15px;
+
+}
+
+.btn:hover {
+    background: #0d3d64;
+}
+
+
+/*footer*/
+
+
+.footer {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: none;
+    margin: auto;
+    margin-top: 895px;
+    position: absolute;
+    background-color: rgb(170, 170, 170);
+    height: 120px;
+    display: flex;
+
+
+}
+
+.footer img {
+    max-width: 300px;
+}
+
+
+.footer .redes-sociales {
+    display: flex;
+    margin: 1100px;
+    gap: 20px;
+
+}
+
+.footer .redes-sociales img:hover {
+
+    background-color: #ffffff;
+}
+
+.footer .redes-sociales img {
+    width: 58px;
+    background-color: #9b9a9a;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(170, 170, 170);
+        margin-top: 887px;
+        position: absolute;
+        max-width: 100%;
+    }
+
+    .footer .redes-sociales {
+        display: flex;
+        margin: 80px;
+        gap: 20px;
+        /* Ajusta el valor según el espacio deseado */
+    }
+
+    .footer img {
+        max-width: 200px;
+    }
+
+    .footer .redes-sociales img {
+        width: 30px;
+        background-color: #9b9a9a;
+
+    }
+
+}
